@@ -1,0 +1,78 @@
+
+/*********    fonts    **********/
+/********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=vietnamese');
+
+/********** end of fonts  ********/
+/********************************/
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+/*** general for all elements ***/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** end of general for all elements ***/
+
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+/******************  FOOTER   *******************/
+
+.footer{
+    background-color: #1d1d1d;
+    color: rgb(206, 206, 206);
+    padding: 20px 10px;
+}
+
+.footer .copyright{
+    text-align: center;
+    
+}
+
+.footer ul{
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+.footer ul li{
+    padding: 10px;
+}
+
+.footer ul li a{
+    color: white;
+}
+
+.footer p{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*#############################################################################################*/
+/*#############################################################################################*/
+/*#############################################################################################*/
+
+/*------------------------------------------------*/
+/*-----------   MEDIA QUERIES  -------------------*/
+/*------------------------------------------------*/
+
+/**   start of query size 778px  **/
+
+@media (max-width: 630px){
+    .footer p{
+        font-size: 14px;
+    }
+}
+
+/**     end  of query size 778px  **/

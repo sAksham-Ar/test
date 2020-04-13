@@ -1,0 +1,148 @@
+
+/*********    fonts    **********/
+/********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=vietnamese');
+
+/********** end of fonts  ********/
+/********************************/
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+/*** general for all elements ***/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** end of general for all elements ***/
+
+
+
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+
+.about-wrapper{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    /*background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/space3.jpg);*/
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-wrapper .img-section{
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(247, 245, 245);
+    border-radius: 10px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+.about-wrapper .img-heading{
+    text-align: center;
+    font-family: 'Orbitron',sans-serif;
+ 
+}
+
+.about-wrapper h2{
+    letter-spacing: 2px;
+    line-height: 1.6em;
+    font-weight: bold;
+    font-size: 1.8em;
+   
+}
+
+
+
+.about-wrapper .img-section img{
+    height: 230px;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px  rgba(112, 109, 109, 0.5);
+}
+
+.about-wrapper .img-section .img-container{
+    text-align: center;
+    
+}
+
+.about-wrapper .img-section .img-card{
+    display: inline-block;
+    margin: 3% 4%;
+}
+
+
+
+
+
+/*#############################################################################################*/
+/*#############################################################################################*/
+/*#############################################################################################*/
+
+/*------------------------------------------------*/
+/*-----------   MEDIA QUERIES  -------------------*/
+/*------------------------------------------------*/
+
+@media (max-width: 800px){
+    .about-wrapper .img-section .img-card{
+        display: inline-block;
+        margin: 4%;
+    }
+    .about-wrapper .img-section{
+        width: 90vw;
+    }
+}
+
+/**   start of query size 630px  **/
+@media (max-width: 630px){
+ 
+    .about-wrapper .img-section{
+        padding: 0 1%;
+    }
+    
+    .about-wrapper .img-section .img-card{
+        display: inline-block;
+        margin: 3%;
+    }
+
+
+
+    .about-wrapper h2{
+       line-height: 1.4em;
+        font-size: 1.1em;
+        padding-top: 3%;
+    }
+
+
+    .about-wrapper .img-section .img-heading{
+        padding-top: 2%;
+    }
+
+    .about-wrapper .img-section{
+        width: 95vw;
+    }
+    
+}
+/**     end  of query size 630px  **/
+
+@media (max-width: 540px){
+    .about-wrapper .img-section img{
+        height: auto;
+        width: 70vw;
+    }
+
+    .about-wrapper .img-section{
+        width: 90vw;
+    }
+}

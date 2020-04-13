@@ -1,0 +1,323 @@
+
+/*********    fonts    **********/
+/********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=vietnamese');
+
+/********** end of fonts  ********/
+/********************************/
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+/*** general for all elements ***/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** end of general for all elements ***/
+
+
+
+/*****************************************************/
+/********          Intro Slider         **************/
+/*****************************************************/
+
+/*.content-wrapper
+{
+    padding: 5% 0;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/header/header-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 49;
+    position: relative;
+}*/
+
+.inner-content
+{
+    margin: 0 auto;
+    width: 80%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 31, 31, 0.5);
+    padding: 3vw 0;
+    color: #f2f2f2;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+/* To make the elements out of slider invisible */
+.inner-wrap{
+    overflow: hidden;
+    width: 100%;
+}
+
+
+#active{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
+    height: 19vw;
+    width: 80vw;
+}
+
+#passive{
+    
+    display: flex;
+    position: absolute;
+    transform: translateX(-10%);
+    visibility: hidden;
+    height: 19vw;
+    top: 4vw;
+}
+
+#intermediate{
+
+    height: 19vw;
+    top: 4vw;
+    display: flex;
+    position: absolute;
+    transform: translateX(10%);
+    visibility: hidden;
+
+}
+
+/*   Slides of slider   */
+.inner-content .intro-main
+{
+    margin: 0 2vw 0 4vw;
+    position: relative;
+    cursor: default;
+}
+
+.inner-content .intro-main h1{
+    margin-top: 0.5vw;
+    font-size: 2.30vw;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.10vw;
+    font-weight: normal;
+    text-align: center;
+}
+
+.intro-main p{
+    margin-top: 1.8vw;
+    font-size: 1.9vw;
+    color: grey;
+    text-align: center;
+}
+ /*** WHO IS HE Button ***/
+.intro-main button{
+    background-color: rgb(81, 144, 204);
+    border: none;
+    position: absolute;
+    left: 2vw;
+    bottom: 0vw;
+    padding: 0.5vw 0.5vw;
+    width: 10vw;
+    height: 3.1vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(206, 202, 202);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/*####### Image of slider  ########*/
+.content-wrapper .inner-content .intro-img
+{
+    margin: auto 4vw auto 2vw;
+}
+
+.inner-content .intro-img div{
+    padding: 0.5vw;
+    background-color: grey;
+}
+
+.content-wrapper .inner-content .intro-img img{
+    width: 20vw;
+    height: auto;
+}
+/*####### End Image of slider  ########*/
+
+
+/*####### Controls of slider  ########*/
+.content-wrapper .inner-content .controls
+{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    color: lightgray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: rgb(81, 144, 204);
+    font-size: 2.3vw;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper .inner-content .right{
+    right: -2vw;
+    top: 9.5vw;
+    position: absolute;
+}
+
+.content-wrapper .inner-content .left{
+    position: absolute;
+    left: -2vw;
+    top: 9.5vw;
+}
+
+.content-wrapper .inner-content i{
+ 
+    position: relative;
+}
+/*####### Controls of slider  ########*/
+
+/*              Intro Slider Ended                       */
+/*##################################################################################*/
+/*##################################################################################*/
+
+
+/*#############################################################################################*/
+/*#############################################################################################*/
+/*#############################################################################################*/
+
+
+/*-----------------------------------------------*/
+/*----------   MEDIA QUERIES   ------------------*/
+/*-----------------------------------------------*/
+
+
+
+/*#########    size of 992px        ##########*/
+
+@media (max-width: 992px){
+
+    /*############  intro slider #############*/
+    .content-wrapper{
+        padding: 4% 0;
+    }
+
+}
+/*#########   end of size of 992px    ##########*/
+
+
+/*#############   sixe of 778px      ############*/
+@media (max-width: 778px ){
+    
+    /*############  intro slider #############*/
+    .inner-content
+    {
+        width: 94%; 
+        height: 110vw; 
+        padding: 3%;
+        border-radius: 1%; 
+    }
+
+    .inner-wrap{
+        overflow: show !important;
+        height: 100%;
+    }
+
+    #active{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    #passive{
+        transform: translateX(0);
+        transition: transform 0.5s ease-out;
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    #intermediate{
+        height: 100%;
+        width: 100%;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .inner-content .intro-main
+    {
+        margin: 0;
+    }
+
+    .inner-content .intro-main h1{
+        margin-top: 1%;
+        font-size: 4vw;
+        letter-spacing: 1px;
+    }
+
+    .intro-main p{
+        margin: 1.8vw 0;
+        font-size: 4vw;
+    }
+
+    .intro-main button{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 93vw;
+        width: 30vw;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .content-wrapper .inner-content .intro-img
+    {
+        display: inline;
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .inner-content .intro-img div{
+        padding: 2%;
+        display: inline-block;
+        border-radius: 1%;
+    }
+
+    .content-wrapper .inner-content .intro-img img{
+        width: auto;
+        height: 53vw;
+    }
+
+    .content-wrapper .inner-content .controls
+    {
+        height: 10vw;
+        width: 10vw;
+        font-size: 6vw;
+    }
+
+    .content-wrapper .inner-content .right{
+        right: 5vw;
+        top: 96vw;
+    }
+
+    .content-wrapper .inner-content .left{
+        left: 5vw;
+        top: 96vw;
+    }
+
+    .content-wrapper .inner-content i{
+        position: relative;
+    }
+    /*############ end intro slider #############*/
+}
+/*############# end of  sixe of 778px      ############*/

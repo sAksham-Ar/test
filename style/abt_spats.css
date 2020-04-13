@@ -1,0 +1,128 @@
+
+/*********    fonts    **********/
+/********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=vietnamese');
+
+/********** end of fonts  ********/
+/********************************/
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+/*** general for all elements ***/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** end of general for all elements ***/
+
+
+
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+
+.about-wrapper{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.about-wrapper .about-content{
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.about-wrapper .heading{
+    text-align: center;
+    font-family: 'Orbitron',sans-serif;
+    padding-bottom: 5%;
+}
+
+.about-wrapper h2{
+    letter-spacing: 2px;
+    line-height: 1.6em;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+
+
+.about-wrapper .content{
+    font-family: 'Roboto Slab', serif;
+    padding: 0 5%;
+}
+
+.about-wrapper .content p{
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+
+.about-wrapper .club{
+    display: flex;
+}
+
+.about-wrapper .club .text{
+    text-align: justify;
+}
+
+.about-wrapper .club img{
+    height: 200px;
+    width: auto;
+    border: 1px solid grey;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+
+
+
+/*#############################################################################################*/
+/*#############################################################################################*/
+/*#############################################################################################*/
+
+/*------------------------------------------------*/
+/*-----------   MEDIA QUERIES  -------------------*/
+/*------------------------------------------------*/
+
+/**   start of query size 778px  **/
+@media (max-width: 630px){
+ 
+    .about-wrapper .about-content{
+        margin: auto 4% 10% 4%;
+    }
+
+    .about-wrapper .club{
+        display: block;
+        text-align: center;
+    }
+
+    .about-wrapper .club img{
+        height: 75vw;
+        width: auto;
+        border: 1px solid grey;
+        margin-top: 6%;
+    }
+
+    .about-wrapper h2{
+       line-height: 1.4em;
+        font-size: 1.1em;
+    }
+    
+    
+    .about-wrapper .content p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+    
+}
+/**     end  of query size 778px  **/

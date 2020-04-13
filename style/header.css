@@ -1,0 +1,94 @@
+
+/*********    fonts    **********/
+/********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700&display=swap&subset=vietnamese');
+
+/********** end of fonts  ********/
+/********************************/
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+/*** general for all elements ***/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** end of general for all elements ***/
+
+
+/*##################################################################################*/
+/*##################################################################################*/
+
+
+/***************************************/
+/********   header section     *********/
+/***************************************/
+.header
+{
+   /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/header/header-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 221px;*/
+    font-family: 'Orbitron', sans-serif;
+}
+
+.header .inner-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 55px;
+}
+
+.header .inner-section .site-title
+{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 10px;
+    letter-spacing: 2px;
+
+}
+/************ End of Header Section  ***************/
+/***************************************************/
+
+/*-----------------------------------------------*/
+/*----------   MEDIA QUERIES   ------------------*/
+/*-----------------------------------------------*/
+
+
+/*#############   sixe of 630px      ############*/
+@media (max-width: 630px){
+
+    /*#############   HEADER  ################*/
+    .header{
+        height: 35vw;
+    }
+
+    .header .inner-section{
+        top: 9vw;
+    }
+    .header .inner-section .site-title{
+        font-size: 5vw;
+        padding-left: 10px;
+    }
+ 
+    .header .inner-section img{
+        width: 20vw;
+        height: auto;
+        align-self: right;
+    }
+    /*#############  END OF HEADER  ################*/
+
+}
+/*#############  end sixe of 630px      ############*/

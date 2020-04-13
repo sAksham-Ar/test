@@ -1,0 +1,389 @@
+   <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/logo-icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/introcontent.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/effects.js"></script>
+    <script src="js/script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>spAts | HOME</title>
+</head>
+<body onload="preloader()">
+<div class=bg>
+    <img src="images/bg1.jpg">
+    <img src="images/bg2.jpg">
+    <img src="images/bg3.jpg">
+    <img src="images/bg4.jpg">
+</div>
+
+<!-- Preloader-->
+<div id="loader" class="animated flipInX slower">
+        <img src="images/loader.png" style="width:300px;height:300px;border-radius:75px;"><br>
+</div>
+
+<div class=rel>
+    <div  class="animated zoomIn" style="display:none;" id="main">
+
+
+        <!-- Navigation bar-->
+<html>
+<head>
+  <title>Navigation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {box-sizing: border-box;}
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #navbar {
+        overflow: visible;
+        background: rgba(0,0,0,0.4);
+        padding: 20px 15px;
+        transition: 0.4s;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+        border: none;
+        height: 120px;
+        vertical-align: center;
+    }
+
+    #navbar a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    #logo{
+    padding-right: 2%;
+        font-family: 'orbitron', sans-serif;
+    }
+
+    #navbar #logo {
+
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0px 0px 300px 0px !important;
+        transition: all 1s ease;
+    }
+
+    #navbar a#logo:hover{
+        background: none;
+    }
+
+    #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    @media screen and (max-width: 580px) {
+        #navbar {
+            padding: 20px 10px !important;
+        }
+        #navbar a {
+            float: none;
+            width: 100%;
+            display: block;
+            text-align: left;
+           
+        }
+        li{
+            padding-right: 10px;
+        }
+    }@media (max-width: 768px) {
+        nav.navbar {
+            background: lightgray;
+        }
+    }
+        #navbar li:hover{
+            background-image: linear-gradient(#000,#fff);
+        }#navbar #dropper{
+             color:#000;
+         }#navbar #dropper:hover{
+              color: #433e39;
+          }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" id="logo" ><img src="images/loader.png" style="width:11em;height:6em"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.php">HOME</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.php" id="dropper">SpAts</a></li>
+              <li><a href="fqtq.php" id="dropper">FQTQ</a></li>
+              <li><a href="team.php" id="dropper">TEAM</a></li>
+            </ul>
+          </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">PREVIOUS ACTIVITIES<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="skygazing.php" id="dropper">SKY GAZING</a></li>
+                    <li><a href="http://www.nssc.in" target="_blank" id="dropper">NSSC</a></li>
+                </ul>
+            </li>
+          <li><a href="comingsoon.php">BLOG</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="comingsoon.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+              document.getElementById("navbar").style.padding = "20px 10px";
+              document.getElementById("logo").style.fontSize = "30px";
+              document.getElementById('logo').innerHTML="SPACE TECHNOLOGY <br><br> STUDENT'S SOCIETY";
+              document.getElementById("navbar").style.backgroundColor="rgba(0,0,0,0.5)";
+          } else {
+              document.getElementById("navbar").style.overflow="visible";
+              document.getElementById("navbar").style.padding = "20px 15px";
+              document.getElementById("logo").style.fontSize = "30px";
+              document.getElementById('logo').innerHTML='<img src="images/loader.png" style="width:11em;height:6em">';
+              document.getElementById("navbar").style.backgroundColor="rgba(255,255,255,0)";
+          }
+      }
+  </script>
+
+</body>
+</html>
+    <!--Start of Introductory Content -->
+    <div class="content-wrapper" id="carousal">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider  | SpAts</title>
+    <link rel="icon" href="images/logo-icon.jpg">
+    <link rel="stylesheet" href="style/star.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <div class="inner-content">
+    <div class="inner-wrap">
+        <div id="active">
+            <div class="intro-main">
+                <h1>
+                    "Physicists Are Made Of Atoms. A Physicist Is An Attempt By An Atom To Understand Itself."
+                </h1>
+                <p>- Michio Kaku, Astrophysicist</p>
+                <button>who is he ?</button>
+            </div>
+            <div class="intro-img">
+                <div><img src="images/michiokaku2.jpg" alt="Michio Kaku"></div>
+            </div>
+        </div>
+        <div id="passive">
+            <div class="intro-main">
+                <h1>
+                    "If Time Travel Is Possible, Where Are The Tourists From The Future?"
+                </h1>
+                <p>- Stephen Hawking, Astrophysicist</p>
+                <button>who is he ?</button>
+            </div>
+            <div class="intro-img">
+                <div><img src="images/stephenhawking.jpg" alt="Michio Kaku"></div>
+            </div>
+        </div>
+        <div id="intermediate">
+            <div class="intro-main">
+                <h1>
+                    "We Are Part Of This Universe; We Are In This Universe, But Perhaps More Important Than Both Of Those Facts, Is That The Universe Is In Us."
+
+                </h1>
+                <p>- Neil deGrasse Tyson</p>
+                <button>who is he ?</button>
+            </div>
+            <div class="intro-img">
+                <div><img src="images/neiltyson.jpeg" alt="Michio Kaku"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="controls left" onclick="leftClick()"><i class="fas fa-chevron-left"></i></button>
+    <button class="controls right" onclick="rightClick()"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>        <br><br>
+        <span class="caret animated bounce infinite" style="color: #FFFFFF;"></span>
+    </div>
+    <!--End of Introductory Content -->
+
+<!--##########################################################################################################-->
+<!--##########################################################################################################-->
+
+    <div class="main-content-wrapper">
+        <div class="main-content">
+            <div class="main-block">
+                <div class="heading">
+                    <h1>National Student's Space Challenge 2019</h1>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="text">
+                            <p>
+                                NSSC 2018 was succesfully organized by members of the society. We recieved participation from all across the country. Students actively took part in technology and astronomy events.
+                            </p>
+                            <a href="http://nssc.in/"><button> READ MORE >></button></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="http://nssc.in/"><img src="images/introcontent/main-content-nssc.jpg" style="height: 50%; width:50%;"alt=""></a>
+                        <a href="http://nssc.in/"><button> READ MORE >></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-block">
+                <div class="heading">
+                    <h1>SpaceX releases preliminary results from Crew Dragon abort test</h1>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="text">
+                            <p>
+                                SpaceX’s Crew Dragon capsule is offloaded from the company’s recovery ship, Go Searcher, after returning to Port Canaveral on Jan. 19 following an in-flight launch escape demonstration.
+                            </p>
+                            <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/"><button> READ MORE >></button></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/">
+                            <img src="images/introcontent/main-content-spacex.jpg" alt="">
+                        </a>
+                        <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/"><button> READ MORE >></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-block">
+                <div class="heading">
+                    <h1>ISRO’s Astronauts are Preparing for India’s First Manned Spaceflight</h1>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="text">
+                            <p>
+                                What does it take to make an astronaut?
+
+                                Now that plans for Gaganyaan, India's first manned mission to space, are getting firmed up, the next focus lies on what the four test pilots of Indian Air Force will have to do, before they are certified fit to fly to space.
+                            </p>
+                            <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html"><button> READ MORE >></button></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html">
+                            <img src="images/introcontent/main-content-isro.jpg" alt="">
+                        </a>
+                        <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html"><button> READ MORE >></button></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+<!--##########################################################################################################-->
+<!--##########################################################################################################-->
+<!-- Footer -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer |  spAts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .footer{
+            background-color: #1d1d1d;
+            color: rgb(206, 206, 206);
+            padding: 20px 10px;
+            height: auto;
+            width: 100%;
+        }
+
+        .copyright{
+            text-align: center;
+
+        }
+
+        .copyright ul{
+            display: inline-flex;
+            list-style-type: none;
+            font-size: 20px;
+        }
+        .copyright ul li{
+            padding: 10px;
+        }
+
+        .cp{
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<footer class="footer">
+    <div class="copyright">
+        <ul>
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-twitter"></i></a></li>
+            <li><a><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p class="cp">&copy; Space Technology Student's Society</p>
+    </div>
+</footer>
+
+</body>
+</html>

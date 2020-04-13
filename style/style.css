@@ -1,0 +1,88 @@
+body{
+  font-family:sans-serif;
+  margin:0;
+  color: #fff;
+  background:url("../images/bg1.jpg")no-repeat center fixed;
+    background-size: cover;
+}.rel{
+  position:relative;
+  background:rgba(0,0,0,0.7);
+  text-align: center;
+}a,input,button{
+  color:#0084ff;
+  text-decoration: none;
+  -moz-transition:all 1s ease;
+  
+  -webkit-transition:all 1s ease;
+  transition: all 1s ease;
+}a:hover{
+  color:#888;
+}
+#main{
+  display: none;
+  text-align: center;
+}
+
+/*PRELOADER - Properties and Animation (start)*/
+#loader {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    color: #f3f3f3;
+    border-radius: 50%;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    vertical-align: text-bottom;
+    animation-iteration-count: infinite;
+}
+/*PRELOADER - Properties and Animation (End)#
+*******************************************
+Extra fonts*/
+
+@font-face {
+  font-family: orbitron;
+  src: url('../fonts/Orbitron-Regular.ttf');
+}
+
+/*BACKGROUND ANIMATION (Starts)*/
+.bg,.bg img{
+  position:fixed;
+  width:100%;
+  height:100%;
+}.bg img{
+   position:absolute;
+   -moz-animation:vis 8s ease infinite;
+   -webkit-animation:vis 8s ease infinite;
+   animation: vis 8s ease infinite;
+ }.bg img:nth-of-type(1){-moz-animation-delay:6s;-webkit-animation-delay:6s; animation-delay: 6s;
+  }.bg img:nth-of-type(2){-moz-animation-delay:4s;-webkit-animation-delay:4s; animation-delay: 4s;
+   }.bg img:nth-of-type(3){-moz-animation-delay:2s;-webkit-animation-delay:2s; animation-delay: 2s;
+    }.bg img:nth-of-type(4){-moz-animation-delay:0s;-webkit-animation-delay:0s; animation-delay: 0s;
+     }@-moz-keyframes vis{
+        0%{opacity:1;
+        }17%{opacity:1;
+         }30%{opacity:0;
+          }90%{opacity:0;
+           }100%{opacity:1;}
+      }@-webkit-keyframes vis{
+         0%{opacity:1;
+         }17%{opacity:1;
+          }30%{opacity:0;
+           }90%{opacity:0;
+            }100%{opacity:1;}
+       }
+       @keyframes
+       vis{
+        0%{opacity:1;
+        }17%{opacity:1;
+         }30%{opacity:0;
+          }90%{opacity:0;
+           }100%{opacity:1;}
+      }
+       }
+/*BACKGROUND ANIMATION (Ends)#
