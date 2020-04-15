@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
         "Welcome to SpAts",
         "Welcome to SpAts",
         "Welcome to SpAts",
-        "Welcome to SpAts",
         "Made of star stuff"
     ];
 
@@ -38,10 +37,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
                 // after callback (and whole text has been animated), start next text
                 StartTextAnimation(i + 1);
             });
+            
         }
     }
     // start the text animation
     StartTextAnimation(0);
+   
 });
 
 //preloader

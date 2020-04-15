@@ -27,7 +27,7 @@
 </div>
 
 <!-- Preloader-->
-<div id="loader" class="animated flipInX slower">
+<div id="loader" class="animated flip slower">
         <img src="images/loader.png" style="width:300px;height:300px;border-radius:75px;"><br>
 </div>
 
@@ -85,7 +85,7 @@
 
     #navbar #logo {
 
-        font-size: 30px;
+        font-size: 100%;
         font-weight: bold;
         padding: 0px 0px 300px 0px !important;
         transition: all 1s ease;
@@ -99,6 +99,8 @@
         background-color: #ddd;
         color: black;
     }
+    
+
 
     @media screen and (max-width: 580px) {
         #navbar {
@@ -106,13 +108,20 @@
         }
         #navbar a {
             float: none;
-            width: 100%;
+            width: 170%;
             display: block;
             text-align: left;
-           
-        }
+               
+         }
         li{
             padding-right: 10px;
+        }
+        #navbar #logo
+        {
+            padding: 0px 0px 300px 0px !important;   
+            
+            font-size: 170%; 
+
         }
     }@media (max-width: 768px) {
         nav.navbar {
@@ -126,6 +135,13 @@
          }#navbar #dropper:hover{
               color: #433e39;
           }
+          #navbar #logo
+        {
+            padding: 0px 0px 300px 0px !important;   
+            
+            font-size: 170%; 
+
+        }
   </style>
 </head>
 <body>
@@ -172,13 +188,13 @@
       function scrollFunction() {
           if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
               document.getElementById("navbar").style.padding = "20px 10px";
-              document.getElementById("logo").style.fontSize = "30px";
+              document.getElementById("logo").style.fontSize = "170%";
               document.getElementById('logo').innerHTML="SPACE TECHNOLOGY <br><br> STUDENT'S SOCIETY";
               document.getElementById("navbar").style.backgroundColor="rgba(0,0,0,0.5)";
           } else {
               document.getElementById("navbar").style.overflow="visible";
               document.getElementById("navbar").style.padding = "20px 15px";
-              document.getElementById("logo").style.fontSize = "30px";
+              document.getElementById("logo").style.fontSize = "170%";
               document.getElementById('logo').innerHTML='<img src="images/loader.png" style="width:11em;height:6em">';
               document.getElementById("navbar").style.backgroundColor="rgba(255,255,255,0)";
           }
@@ -201,6 +217,8 @@
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
+    <div id="typewrite"style="color:white;font-size:200%;">
+        </div>
     <div class="inner-content">
     <div class="inner-wrap">
         <div id="active">
@@ -293,7 +311,7 @@
                     </div>
                     <div class="right">
                         <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/">
-                            <img src="images/introcontent/main-content-spacex.jpg" alt="">
+                            <img src="images/introcontent/main-content-spacex.jpg" style="height: 50%; width:50%;" alt="">
                         </a>
                         <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/"><button> READ MORE >></button></a>
                     </div>
@@ -317,7 +335,7 @@
                     </div>
                     <div class="right">
                         <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html">
-                            <img src="images/introcontent/main-content-isro.jpg" alt="">
+                            <img src="images/introcontent/main-content-isro.jpg" style="height: 50%; width:50%;"alt="">
                         </a>
                         <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html"><button> READ MORE >></button></a>
                     </div>
