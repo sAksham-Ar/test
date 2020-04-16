@@ -1,12 +1,24 @@
 //text effect
 document.addEventListener('DOMContentLoaded', function (event) {
-
+    var x = window.matchMedia("(max-width: 768px)")
+    if (x.matches){
     var dataText = [
         "Welcome to SpAts",
         "Welcome to SpAts",
         "Welcome to SpAts",
         "Made of star stuff"
     ];
+}
+else
+{
+    var dataText = [
+        "Welcome to SpAts",
+        "Welcome to SpAts",
+        "Welcome to SpAts",
+        "Welcome to SpAts",
+        "Made of star stuff"
+    ];
+}
 
     // type one text in the typwriter
     // keeps calling itself until the text is finished

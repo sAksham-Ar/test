@@ -27,7 +27,7 @@
 </div>
 
 <!-- Preloader-->
-<div id="loader" class="animated flip slower">
+<div id="loader" class="animated bounceIn">
         <img src="images/loader.png" style="width:300px;height:300px;border-radius:75px;"><br>
 </div>
 
@@ -87,7 +87,7 @@
 
         font-size: 100%;
         font-weight: bold;
-        padding: 0px 0px 300px 0px !important;
+        padding: 0px 0px 60px 0px !important;
         transition: all 1s ease;
     }
 
@@ -118,7 +118,7 @@
         }
         #navbar #logo
         {
-            padding: 0px 0px 300px 0px !important;   
+            padding: 0px 0px 60px 0px !important;   
             
             font-size: 170%; 
 
@@ -137,7 +137,7 @@
           }
           #navbar #logo
         {
-            padding: 0px 0px 300px 0px !important;   
+            padding: 0px 0px 60px 0px !important;   
             
             font-size: 170%; 
 
@@ -189,12 +189,14 @@
           if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
               document.getElementById("navbar").style.padding = "20px 10px";
               document.getElementById("logo").style.fontSize = "170%";
+              document.getElementById("logo").style.opacity=0.1;
               document.getElementById('logo').innerHTML="SPACE TECHNOLOGY <br><br> STUDENT'S SOCIETY";
               document.getElementById("navbar").style.backgroundColor="rgba(0,0,0,0.5)";
           } else {
               document.getElementById("navbar").style.overflow="visible";
               document.getElementById("navbar").style.padding = "20px 15px";
               document.getElementById("logo").style.fontSize = "170%";
+              document.getElementById("logo").style.opacity=1;
               document.getElementById('logo').innerHTML='<img src="images/loader.png" style="width:11em;height:6em">';
               document.getElementById("navbar").style.backgroundColor="rgba(255,255,255,0)";
           }
