@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
         "Welcome to SpAts",
         "Welcome to SpAts",
         "Welcome to SpAts",
+        "Welcome to SpAts",
         "Made of star stuff"
     ];
 }
 else
 {
     var dataText = [
-        "Welcome to SpAts",
         "Welcome to SpAts",
         "Welcome to SpAts",
         "Welcome to SpAts",
