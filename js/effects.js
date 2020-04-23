@@ -16,6 +16,7 @@ else
         "Welcome to SpAts",
         "Welcome to SpAts",
         "Welcome to SpAts",
+        
         "Made of star stuff"
     ];
 }
