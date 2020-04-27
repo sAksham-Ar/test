@@ -1,4 +1,4 @@
-   <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -32,7 +32,11 @@
 
 <!-- Preloader-->
 <div id="loader" class="animated bounceIn">
-        <img src="images/loader.png" style="  display: block;margin-left: auto;
+        <img src="images/loader.png" style="  display: block;margin-left: auto;  
+       
+        width: auto;
+        height: 200px;
+    
         margin-right: auto;border-radius:75px;"><br>
 </div>
 
@@ -57,8 +61,8 @@
     body {
         margin: 0;
         font-family: 'Merriweather', serif;
-
-
+        overflow-x: hidden;
+       
     }
 
     #navbar {
@@ -267,38 +271,38 @@ if (scroll >= 150) {
         </div>
     <div class="inner-content">
     <div class="inner-wrap">
-        <div id="active">
+        <div id="active" style="z-index: 100;">
             <div class="intro-main">
                 <h1>
                     "Physicists Are Made Of Atoms. A Physicist Is An Attempt By An Atom To Understand Itself."
                 </h1>
                 <p>- Michio Kaku, Astrophysicist</p>
-                <button>who is he ?</button>
+                <a href="https://en.wikipedia.org/wiki/Michio_Kaku"><button class="btn btn-primary">who is he ?</button></a>
             </div>
             <div class="intro-img">
                 <div><img src="images/michiokaku2.jpg" alt="Michio Kaku"></div>
             </div>
         </div>
-        <div id="passive">
+        <div id="passive" style="z-index: -1;">
             <div class="intro-main">
                 <h1>
                     "If Time Travel Is Possible, Where Are The Tourists From The Future?"
                 </h1>
                 <p>- Stephen Hawking, Astrophysicist</p>
-                <button>who is he ?</button>
+                <a href="https://en.wikipedia.org/wiki/Stephen_Hawking"><button class="btn btn-primary">who is he ?</button></a>
             </div>
             <div class="intro-img">
                 <div><img src="images/stephenhawking.jpg" alt="Michio Kaku"></div>
             </div>
         </div>
-        <div id="intermediate">
+        <div id="intermediate" style="z-index: -1;">
             <div class="intro-main">
                 <h1>
                     "We Are Part Of This Universe; We Are In This Universe, But Perhaps More Important Than Both Of Those Facts, Is That The Universe Is In Us."
 
                 </h1>
                 <p>- Neil deGrasse Tyson</p>
-                <button>who is he ?</button>
+                <a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"><button class="btn btn-primary">who is he ?</button></a>
             </div>
             <div class="intro-img">
                 <div><img src="images/neiltyson.jpeg" alt="Michio Kaku"></div>
@@ -320,78 +324,87 @@ if (scroll >= 150) {
 <!--##########################################################################################################-->
 <!--##########################################################################################################-->
 
-    <div class="main-content-wrapper">
-        <div class="main-content">
-            <div class="main-block">
-                <div class="heading">
-                    <h1>National Student's Space Challenge 2019</h1>
-                </div>
-                <div class="content">
-                    <div class="left">
-                        <div class="text">
-                            <p>
-                                NSSC 2018 was succesfully organized by members of the society. We recieved participation from all across the country. Students actively took part in technology and astronomy events.
-                            </p>
-                            <a href="http://nssc.in/"><button class="btn btn-primary" style="font-size: 1.5vw;"> READ MORE >></button></a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <a href="http://nssc.in/"><img src="images/introcontent/main-content-nssc.jpg" style="height: 50%; width:50%;"alt=""></a>
-                  
-                    </div>
-                </div>
+    
+<div class="main-content-wrapper">
+    <div class="main-content">
+        <div class="main-block">
+            <div class="heading">
+                <h1>National Student's Space Challenge 2019</h1>
             </div>
-
-            <div class="main-block">
-                <div class="heading">
-                    <h1>SpaceX releases preliminary results from Crew Dragon abort test</h1>
+            <div class="content">
+                <div class="right">
+                    <a href="http://nssc.in/"><img src="images/introcontent/main-content-nssc.jpg" alt=""></a>
+                    <a href="http://nssc.in/"><button> READ MORE >></button></a>
                 </div>
-                <div class="content">
-                    <div class="left">
-                        <div class="text">
-                            <p>
-                                SpaceX’s Crew Dragon capsule is offloaded from the company’s recovery ship, Go Searcher, after returning to Port Canaveral on Jan. 19 following an in-flight launch escape demonstration.
-                            </p>
-                            <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/"><button class="btn btn-primary"style="font-size: 1.5vw;"> READ MORE >></button></a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/">
-                            <img src="images/introcontent/main-content-spacex.jpg" style="height: 50%; width:50%;" alt="">
-                        </a>
+                <div class="left">
+                    <div class="text">
+                        <p>
+                            NSSC 2018 was succesfully organized by members of the society. We recieved participation from all across the country. Students actively took part in technology and astronomy events.
+                            <br>
+                            <a href="http://nssc.in/"><button> READ MORE >></button></a>
+                        </p>
                         
                     </div>
                 </div>
+               
             </div>
-
-            <div class="main-block">
-                <div class="heading">
-                    <h1>ISRO’s Astronauts are Preparing for India’s First Manned Spaceflight</h1>
-                </div>
-                <div class="content">
-                    <div class="left">
-                        <div class="text">
-                            <p>
-                                What does it take to make an astronaut?
-
-                                Now that plans for Gaganyaan, India's first manned mission to space, are getting firmed up, the next focus lies on what the four test pilots of Indian Air Force will have to do, before they are certified fit to fly to space.
-                            </p>
-                            <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html"><button class="btn btn-primary" style="font-size: 1.5vw;"> READ MORE >></button></a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html">
-                            <img src="images/introcontent/main-content-isro.jpg" style="height: 50%; width:50%;"alt="">
-                        </a>
-                        
-                    </div>
-                </div>
-            </div>
-
-
         </div>
-    </div>
 
+        <div class="main-block">
+            <div class="heading">
+                <h1>SpaceX releases preliminary results from Crew Dragon abort test</h1>
+            </div>
+            <div class="content">
+                <div class="right">
+                    <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/">
+                        <img src="images/introcontent/main-content-spacex.jpg" alt="">
+                    </a>
+                    <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/"><button> READ MORE >></button></a>
+                </div>
+                <div class="left">
+                    <div class="text">
+                        <p>
+                            SpaceX’s Crew Dragon capsule is offloaded from the company’s recovery ship, Go Searcher, after returning to Port Canaveral on Jan. 19 following an in-flight launch escape demonstration.
+                            <br>
+                            <a href="https://spaceflightnow.com/2020/01/23/spacex-releases-preliminary-results-from-crew-dragon-abort-test/"><button> READ MORE >></button></a>
+                        </p>
+                       
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="main-block">
+            <div class="heading">
+                <h1>ISRO’s Astronauts are Preparing for India’s First Manned Spaceflight</h1>
+            </div>
+            <div class="content">
+                <div class="right">
+                    <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html">
+                        <img src="images/introcontent/main-content-isro.jpg" alt="">
+                    </a>
+                    <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html"><button> READ MORE >></button></a>
+                </div>
+                <div class="left">
+                    <div class="text">
+                        <p>
+                            What does it take to make an astronaut?
+
+                            Now that plans for Gaganyaan, India's first manned mission to space, are getting firmed up, the next focus lies on what the four test pilots of Indian Air Force will have to do, before they are certified fit to fly to space.
+                            <br>
+                            <a href="https://www.news18.com/news/tech/heres-how-isros-astronauts-are-preparing-for-indias-first-manned-spaceflight-2471117.html"><button> READ MORE >></button></a>
+                        </p>
+                       
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+
+    </div>
+</div>
 
 
 <!--##########################################################################################################-->
