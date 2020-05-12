@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet"> 
 
     <script type="text/javascript" src="js/effects.js"></script>
     <script src="js/script.js"></script>
@@ -77,9 +78,13 @@
         border: none;
         height: 120px;
         vertical-align: center;
+       
+	
+	
     }
 
     #navbar a {
+       
         float: left;
         color: #ffffff;
         text-align: center;
@@ -105,11 +110,52 @@
     #navbar a#logo:hover{
         background: none;
     }
+    #navbar .collapse .nav a {
+  display: inline-block;
+}
 
-    #navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
+#navbar .collapse #nav a:after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  position: absolute;
+  top:20px;
+}
+
+#navbar .collapse #nav a:hover:after {
+  width: 100%;
+}
+#navbar .collapse #nav #dropper1:after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  position: absolute;
+  top:26px;
+}
+
+#navbar .collapse #nav #dropper1:hover:after {
+  width: 100%;
+}
+#navbar .collapse #nav #dropper2:after {
+  content: '';
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  position: absolute;
+  top:75px;
+}
+
+#navbar .collapse #nav #dropper2:hover:after {
+  width: 100%;
+}
     .navbar {
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -147,18 +193,25 @@
         {
             width: 100%!important;
         }
-    }@media (max-width: 768px) {
+     
+    }@media (max-width: 768px){
         nav.navbar {
             background: lightgray;
         }
+    
     }
-        #navbar li:hover{
-            background-image: linear-gradient(#000,#fff);
-        }#navbar #dropper{
+  
+  
+ 
+        
+        #navbar #dropper1{
              color:#000;
-         }#navbar #dropper:hover{
-              color: #433e39;
-          }
+            
+         }
+         #navbar #dropper2{
+             color:#000;
+            
+         }
           #navbar #logo
         {
             padding: 0px 0px 60px 0px !important;   
@@ -169,6 +222,20 @@
         #loader img
         {
             width: 100%!important;
+        }
+        .dropdown-menu
+        {
+            background-color:black!important;
+            z-index: 999;
+        }
+        .dropdown-menu li a
+        {
+            color :white!important;
+            font-family: "Aclonica", sans-serif;       
+        }
+
+        .dropdown-menu li a:hover{
+            background-color:transparent!important;
         }
   </style>
 </head>
@@ -184,24 +251,24 @@
         <a class="navbar-brand" href="#" id="logo" ><img src="images/loader.png" style="width:11em;height:6em"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">HOME</a></li>
+        <ul class="nav navbar-nav" id="nav">
+          <li><a href="index.html" >HOME</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="abt_spats.html" id="dropper">SpAts</a></li>
-              <li><a href="abt_fqtq.html" id="dropper">FQTQ</a></li>
-              <li><a href="abt_team.html" id="dropper">TEAM</a></li>
+            <ul class="dropdown-menu" >
+              <li><a href="abt_spats.html" id="dropper1" >SpAts</a></li>
+              <li><a href="abt_fqtq.html" id="dropper2" >FQTQ</a></li>
+              
             </ul>
           </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">PREVIOUS ACTIVITIES<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="skygazing.html" id="dropper">SKY GAZING</a></li>
-                    <li><a href="http://www.nssc.in" target="_blank" id="dropper">NSSC</a></li>
+                <ul class="dropdown-menu" >
+                    <li><a href="skygazing.html" id="dropper1" >SKY GAZING</a></li>
+                    <li><a href="http://www.nssc.in" target="_blank" id="dropper2" >NSSC</a></li>
                 </ul>
             </li>
-          <li><a href="comingsoon.html">BLOG</a></li>
+          <li><a href="comingsoon.html" >BLOG</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="comingsoon.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -211,6 +278,7 @@
   </nav>
 
   <script>
+      
       window.onscroll = function() {scrollFunction()};
       var x = window.matchMedia("(max-width: 768px)");
       function scrollFunction() {
