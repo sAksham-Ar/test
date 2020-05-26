@@ -146,7 +146,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
-
+.intro-main button:hover span {
+    display:none;
+  }
+.intro-main button:hover:before{
+    content:"GO";
+}
+.intro-main button:hover
+{
+    background-color: black;
+}
 /*####### Image of slider  ########*/
 .content-wrapper .inner-content .intro-img
 {
@@ -178,7 +187,7 @@
     cursor: pointer;
     border: none;
     position: relative;
-    z-index: 50;
+    z-index: 500;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -199,6 +208,7 @@
 .content-wrapper .inner-content i{
  
     position: relative;
+    top:20%;
 }
 /*####### Controls of slider  ########*/
 

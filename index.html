@@ -58,7 +58,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <style>
     * {box-sizing: border-box;}
-
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
     body {
         margin: 0;
         font-family: 'Merriweather', serif;
@@ -116,50 +119,18 @@
 
 #navbar .collapse #nav a:after {
   content: '';
-  width: 0px;
+  width: 10%;
   height: 3px;
   display: block;
-  background: black;
+  background: rgb(81, 144, 204);
   transition: 300ms;
-  position: absolute;
-  top:20px;
+
 }
 
 #navbar .collapse #nav a:hover:after {
   width: 100%;
 }
-#navbar .collapse #nav #dropper1:after {
-  content: '';
-  width: 0px;
-  height: 3px;
-  display: block;
-  background: black;
-  transition: 300ms;
-  position: absolute;
-  top:26px;
-}
 
-#navbar .collapse #nav #dropper1:hover:after {
-  width: 100%;
-}
-#navbar .collapse #nav #dropper2:after {
-  content: '';
-  width: 0px;
-  height: 3px;
-  display: block;
-  background: black;
-  transition: 300ms;
-  position: absolute;
-  top:75px;
-}
-
-#navbar .collapse #nav #dropper2:hover:after {
-  width: 100%;
-}
-    .navbar {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-}
 
 .navbar-hide {
     pointer-events: none;
@@ -345,32 +316,32 @@ if (scroll >= 150) {
                     "Physicists Are Made Of Atoms. A Physicist Is An Attempt By An Atom To Understand Itself."
                 </h1>
                 <p>- Michio Kaku, Astrophysicist</p>
-                <a href="https://en.wikipedia.org/wiki/Michio_Kaku"><button class="btn btn-primary">who is he ?</button></a>
+                <a href="https://en.wikipedia.org/wiki/Michio_Kaku"><button class="btn btn-primary"><span>who is he ?</span></button></a>
             </div>
             <div class="intro-img">
                 <div><img src="images/michiokaku2.jpg" alt="Michio Kaku"></div>
             </div>
         </div>
-        <div id="passive" style="z-index: -1;">
+        <div id="passive">
             <div class="intro-main">
                 <h1>
                     "If Time Travel Is Possible, Where Are The Tourists From The Future?"
                 </h1>
                 <p>- Stephen Hawking, Astrophysicist</p>
-                <a href="https://en.wikipedia.org/wiki/Stephen_Hawking"><button class="btn btn-primary">who is he ?</button></a>
+                <a href="https://en.wikipedia.org/wiki/Stephen_Hawking"><button class="btn btn-primary"><span>who is he ?</span></button></a>
             </div>
             <div class="intro-img">
                 <div><img src="images/stephenhawking.jpg" alt="Michio Kaku"></div>
             </div>
         </div>
-        <div id="intermediate" style="z-index: -1;">
+        <div id="intermediate" >
             <div class="intro-main">
                 <h1>
                     "We Are Part Of This Universe; We Are In This Universe, But Perhaps More Important Than Both Of Those Facts, Is That The Universe Is In Us."
 
                 </h1>
                 <p>- Neil deGrasse Tyson</p>
-                <a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"><button class="btn btn-primary">who is he ?</button></a>
+                <a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"><button class="btn btn-primary"><span>who is he ?</span></button></a>
             </div>
             <div class="intro-img">
                 <div><img src="images/neiltyson.jpeg" alt="Michio Kaku"></div>

@@ -4,7 +4,8 @@ body{
   color: #fff;
   background:url("../images/bg1.jpg")no-repeat center fixed;
     background-size: cover;
-}.rel{
+}
+.rel{
   position:relative;
   background:rgba(0,0,0,0.7);
   text-align: center;
@@ -84,5 +85,5 @@ Extra fonts*/
           }90%{opacity:0;
            }100%{opacity:1;}
       }
-       }
+       
 /*BACKGROUND ANIMATION (Ends)#
