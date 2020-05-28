@@ -262,7 +262,7 @@
 }
     .main-content-wrapper .flip-box{
    
-        font-size: 10px;
+        font-size: 20px;
         padding: 0 2% 0 2%;
         flex-basis: 60%;
     
@@ -284,6 +284,10 @@
         border-radius: 2px;
         cursor: pointer;
     }
+    .main-content-wrapper a:hover
+    {
+        text-decoration: none;
+    }
  
     .main-content-wrapper button:hover span {
         display:none;
@@ -293,6 +297,7 @@
     }
     .main-content-wrapper button:hover
     {
+        text-decoration: none;
         background-color: rgb(131, 111, 111);
     }
 
